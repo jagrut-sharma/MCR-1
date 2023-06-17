@@ -42,7 +42,7 @@ export default function BookCard({ book }) {
       </p>
       <p className="text-md">{book.author}</p>
 
-      {/* <select
+      <select
         name="category"
         id="category"
         className="mt-2"
@@ -53,9 +53,9 @@ export default function BookCard({ book }) {
         <option value="currReading">Currently Reading</option>
         <option value="yetToRead">Yet to Read</option>
         <option value="none">None</option>
-      </select> */}
+      </select>
 
-      <FormControl size="small">
+      {/* <FormControl size="small" sx={{ width: "100%" }}>
         <InputLabel id="demo-simple-select-label" className="mt-4">
           Shelf
         </InputLabel>
@@ -73,7 +73,7 @@ export default function BookCard({ book }) {
           <MenuItem value="yetToRead">Yet to Read</MenuItem>
           <MenuItem value="none">None</MenuItem>
         </Select>
-      </FormControl>
+      </FormControl> */}
     </div>
   );
 }
