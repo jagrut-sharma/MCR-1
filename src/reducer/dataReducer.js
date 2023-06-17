@@ -20,6 +20,9 @@ export const dataReducer = (draft, action) => {
       );
     } else {
       draft[newCategory].push(book);
+      draft.bookList = draft.bookList.map((sample) =>
+        sample._id === book._id ? book : sample
+      );
     }
   }
 };
